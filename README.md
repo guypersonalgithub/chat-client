@@ -6,7 +6,7 @@ The server is hosted on Heroku's free tier, and because of that the first connec
 
 # The server
 
-To enter the client's GitHub, press [here](https://github.com/guypersonalgithub/chat-server)
+To enter the server's GitHub, press [here](https://github.com/guypersonalgithub/chat-server)
 
 # For additional projects
 
