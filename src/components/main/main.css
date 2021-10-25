@@ -1,0 +1,233 @@
+#chat {
+
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat (12,1fr);
+    grid-template-rows: calc(100% - 30px) 30px;
+
+
+}
+
+#messageContainer {
+
+    grid-column: span 12;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+
+}
+
+.messageWrapper {
+
+    overflow: none;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#sendMessage {
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: calc(100% - 100px) 100px;
+    grid-template-rows: 30px;
+
+}
+
+.sendButton {
+
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(48, 104, 187);
+    border: none;
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+.sendButton:hover {
+
+    color: rgb(160, 46, 46);
+    transition-duration: 0.5s;
+
+}
+
+.sendButton:focus {
+
+    outline: none;
+    box-shadow: none;
+
+}
+
+#messages {
+
+    padding-top: 1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    grid-column: span 12;
+
+}
+
+.myMessage {
+
+    width: 50%;
+    background-color: rgb(50, 65, 133);
+    float: right;
+    color: white;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 1%;
+    overflow: none;
+
+}
+
+.otherMessage {
+
+    width: 50%;
+    background-color: rgb(138, 143, 163);
+    float: left;
+    color: white;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1%;
+    overflow: none;
+
+}
+
+.systemMessage {
+
+    width: 50%;
+    background-color: rgb(89, 122, 255);
+    display: inline-block;  
+    color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1%;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.messageText {
+
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    width: 100%;
+    float: left;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+
+}
+
+.systemMessageText {
+
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+
+    .myMessage {
+
+        width: 80%;
+
+    }
+
+    .otherMessage {
+
+        width: 80%;
+
+    }
+
+}
+
+.last {
+
+    height: 0.5em;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 1em;
+
+}
+
+.textInput {
+
+    color: rgb(209, 81, 81);
+    background-color: rgb(67, 81, 146);
+    border: none;
+    height: 100%;
+    font-weight: bold;
+    resize: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    
+}
+
+@keyframes fadeToLeftMessage {
+    
+    0% {
+
+        opacity: 0;
+        margin-right: -30px;
+
+    }
+
+    100% {
+
+        opacity: 1;
+        margin-right: 0px;
+
+    }
+
+}
+
+@keyframes fadeToRightMessage {
+    
+    0% {
+
+        opacity: 0;
+        margin-left: -30px;
+
+    }
+
+    100% {
+
+        opacity: 1;
+        margin-left: 0px;
+
+    }
+
+}
+
+.messageSender {
+
+    border-radius: 1em;
+    font-weight: bold;
+    box-sizing: content-box;
+    display: inline-block;
+}

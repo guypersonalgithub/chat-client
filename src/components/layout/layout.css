@@ -1,0 +1,47 @@
+.layout {
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 150px auto;
+    grid-template-rows: 100%;
+    font-family: Stylish;
+    min-width: 300px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+
+    .layout {
+
+        grid-template-areas: "main main main"
+                             "aside aside aside";
+        grid-template-rows: calc(100vh - 70px) 70px;
+
+    }
+
+    .layout > aside {
+
+        height: 70px;
+        width: 100%;
+
+    }
+
+}
+
+.layout > main {
+
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 70px calc(100% - 70px);
+    background-color: white;
+    z-index: 1;
+
+}
+
+.layout > aside {
+    
+    grid-area: aside;
+    overflow: hidden;
+    background-color: rgba(22, 32, 54, 0.9);
+    z-index: 2;
+}

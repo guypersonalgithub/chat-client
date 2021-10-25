@@ -1,0 +1,80 @@
+.pickNickname {
+
+    overflow: auto;
+    padding-bottom: 1.5em;
+
+}
+
+.centerItems {
+
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2%;
+    background-color: rgba(238, 243, 246);
+    border-radius: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+}
+
+.enterNameInput {
+
+    text-align: center;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    border-radius: 0.5em;
+
+}
+
+.enterNameInput:hover {
+
+    background-color: grey;
+
+}
+
+.enterNameButton {
+
+    border: none;
+    background-color: rgb(201, 201, 201);
+    border-radius: 0.5em;
+
+}
+
+.enterNameButton:hover {
+
+    background-color: grey;
+
+}
+
+.welcomeTextSecondaryHeader {
+
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+.welcomeTextHeader {
+
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-size: 2.5em;
+
+}
+
+.welcomeText {
+
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+.enterNick {
+
+    text-align: center;
+
+}

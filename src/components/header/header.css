@@ -1,0 +1,37 @@
+#headerContainer {
+
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: rgb(77, 88, 128);
+    height: 70px;
+    color: white;
+    display: flex;
+    z-index: 5;
+
+}
+
+.headerIcon {
+
+    margin-right: 5px;
+    width: 50px;
+    margin-bottom: 25px;
+    
+}
+
+.headerText {
+
+    font-size: 1.5em;
+    
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+
+    #headerContainer {
+
+        padding-left: 0.5em;
+
+    }
+
+}
